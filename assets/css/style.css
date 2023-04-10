@@ -345,7 +345,6 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    padding: 5px 20px;
 }
 .grid-wrapper > div > img {
 	width: 100%;
