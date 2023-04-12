@@ -704,7 +704,7 @@ input {
     
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:780px){
     .flip-card-front {
         width: 380px;
         padding: 70px;
@@ -728,7 +728,7 @@ input {
     }
 
     .flip-card-back {
-        width: 380px;
+        width: 400px;
         padding: 70px;
         height: 750px;
     }
@@ -790,7 +790,7 @@ input {
     }
 
     .flip-card-back {
-        width: 700px;
+        width: 600px;
         padding: 70px;
         height: 760px;
         flex-direction: column;
