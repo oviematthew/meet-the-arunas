@@ -479,7 +479,6 @@ li {
 #rsvp-container {
     display: flex;
     justify-content: center;
-    text-align: center;
     padding: 50px 30px;
     align-items: center;
 }
@@ -495,9 +494,9 @@ li {
 .flip-card-front, .flip-card-back {
     position: relative;
     z-index: 1;
-    width: 900px;
-    padding: 50px 30px;
-    height: 500px;
+    width: max-content;
+    padding: 100px;
+    height: max-content;
     border-radius: 20px;
    -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
   -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
@@ -583,11 +582,28 @@ li {
 }
 
 label {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     font-family: 'Inter', sans-serif;
     color: #5D7B68;
-    margin: 20px 0;
+    margin: 10px 0;
+    text-align: left;
 
+}
+
+.dark-text {
+    color: var(--p-text);
+    font-weight: 400;
+}
+
+
+
+.single-form-field, .dual-form-field {
+    margin: 20px 0;
+}
+
+.block {
+    display: block;
 }
 
 .back-h2 {
@@ -609,15 +625,6 @@ label {
 
 
 
-/* For Chrome and Safari  */
-          
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-/* For Firefox  */
-  
 
 
 .no-outline:focus {
@@ -630,14 +637,33 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 select {
-    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-right: 7px !important;
+    /* margin-top: 10px;
     border-radius: 10px;
-    border: 2px solid #5D7B68;
+    border: 2px solid #5D7B68; */
 }
 
 input {
-   border: none;
-    border-bottom: 1px solid;
+
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-right: 7px !important;
+
+   /* border: none;
+    border-bottom: 1px solid; */
+}
+
+ 
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+    accent-color: #5D7B68;
 }
 
 #back-right-col {
@@ -699,8 +725,21 @@ input {
     .flip-card-back {
         width: 650px;
         padding: 70px;
-        height: 750px;
+        height: max-content;
     }
+
+    select {
+        margin-bottom: 10px !important;
+    }
+
+    input {
+
+        margin-bottom: 10px !important;
+    
+       /* border: none;
+        border-bottom: 1px solid; */
+    }
+
     
 }
 
@@ -714,7 +753,7 @@ input {
     .flip-card-back {
         width: 650px;
         padding: 70px;
-        height: 750px;
+        height: max-content;
     }
     
 }
@@ -730,7 +769,7 @@ input {
     .flip-card-back {
         width: 400px;
         padding: 70px;
-        height: 750px;
+        height: max-content;
     }
     
 }
@@ -747,7 +786,7 @@ input {
         margin-left: 0;
         width: 360px;
         padding: 70px;
-        height: 750px;
+        height: max-content;
     }
     
 }
@@ -792,7 +831,7 @@ input {
     .flip-card-back {
         width: 600px;
         padding: 70px;
-        height: 760px;
+        height: max-content;
         flex-direction: column;
     }
 
@@ -808,9 +847,15 @@ input {
         text-align: left;
     }
 
-    input {
+    input, select {
+        
         width: 220px;
     }
+
+   
+
+    
+    
 
 
     .monogram-img {

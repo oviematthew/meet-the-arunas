@@ -199,8 +199,10 @@
         <div class="row">
             <div class="col">
                 <h2 class="header-h2">
-                    RSVP
+                    RSVP FORM
                </h2> 
+
+               
                 <div class="card-wrapper" id="flip-card">
                         <!-- <div id="card-front" class="flip-card-front hidden">
                             <div class="container" id="front-cont">
@@ -229,7 +231,7 @@
                         <div id="card-back" class="flip-card-back ">
                             <div class="container" id="back-cont">
                                 <div class="row" id="back-row">
-                                    <div class="col-12 col-md-6" id="back-left-col">
+                                    <div class="col-12 " id="back-left-col">
                                         <!-- <div class="head">
                                             <h2 class="back-h2">RSVP</h2>
                                         </div> -->
@@ -237,18 +239,33 @@
                                         
 
                                         <form class="needs-validation" validate action="mail.php" method="post">
-                                            <label for="fullname">FULL NAME
-                                                <br>
-                                            <input type="text" name="fullname" id="fullname" class="no-outline" required>
-                                            
-                                            </label>
                                             
                                             
-                                            <label for="country">RESIDENT COUNTRY
-                                                <br>
-                                                <br>
-                                                <select  aria-label="country select" id="country"  name="country" class="no-outline" required>
-                                                    <option selected hidden>Select</option>
+                                            <div class="dual-form-field">
+                                            <label for="" class="block">Name:</label>
+                                          
+
+                                            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                                           
+                                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+
+                                            </div>
+                                            
+                                            <div class="dual-form-field">
+                                                <label for="emailaddress">Email 
+                                                    <br>
+                                                    <input class="full-width" type="email" name="emailaddress" id="emailaddress" placeholder="example@gmail.com" required>
+                                                    </label>
+                                            </div>
+
+                                            <hr>
+                                            <div class="dual-form-field">
+                                                
+                                                <label for="" class="block">Please Provide your current mailing address</label>
+
+                                                
+                                                <select  aria-label="country select" id="country"  name="country" required>
+                                                    <option selected hidden>Country</option>
                                                     <option value="Afghanistan">Afghanistan</option>
                                                     <option value="Albania">Albania</option>
                                                     <option value="Algeria">Algeria</option>
@@ -446,32 +463,56 @@
                                                     <option value="Zimbabwe">Zimbabwe</option>
                                                 </select>
                                                 
-                                            </label>
+                                                <input type="text" name="streetaddress" id="streetaddress" placeholder="Street Address" required>
+
+                                                <br>
+                                                <br>
+                                                <input type="text" name="city" id="city" placeholder="City" required>
+                                                
+                                                <input type="text" name="postalcode" id="postalcode" placeholder="Postal Code" required>
+
+                                        </div>
+
+                                        <hr>
+                                        <div class="single-form-field">
+                                                <label for="">Reception Response</label>
+                                                <br>
+
+                                                <label class="dark-text">
+                                                    <input type="radio" name="receptionresponse" value="Accepted" required>Accepts with pleasure
+                                                  </label>
+                                                  <br>
+                                                  <label class="dark-text">
+                                                    <input type="radio" name="receptionresponse" value="Declined" required>Decline with regrets
+                                                  </label>
+                                            </div>
                                            
-                                                <label for="guests">NUMBER OF GUEST(S)
+                                                <label for="guests">Number Of Guest(s)
                                                     <br>
-                                                    <input type="number" name="guests" id="guests" class="no-outline" data-maxlength="1" min="0" max="1" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" required>
+                                                    <input type="number" name="guests" id="guests" data-maxlength="1" min="0" max="1" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" required>
                                                 </label>
                                                     
 
-                                                <label for="nameofguest">GUEST NAME
+                                                <label for="nameofguest">Guest Name
                                                     <br>
-                                                    <input type="text" name="nameofguest" id="nameofguest" class="no-outline"  required>      
+                                                    <input type="text" name="nameofguest" id="nameofguest"  required>      
                                                 </label>
                                                     <br>
+
+                                            
 
                                             <div class="g-recaptcha" data-sitekey="6LfS7GslAAAAAP24Bp8qhLUnUNB1yA_c1_phvrdj"></div>
                                             <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit' id="submit-btn">Submit</button>
                                             
                                         </form>
                                     </div>
-                                    <div class="col-12 col-md-6" id="back-right-col">
+                                    <!-- <div class="col-12 col-md-6" id="back-right-col">
                                         <div class="img">
                                         <img class="monogram-img" src="/assets/media/logo.png" alt="monogram-image">
                                         <h5 class="back-h5">December 23 2023</h5>
                                         </div>
 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             
