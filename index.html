@@ -129,7 +129,14 @@
                 <p class="left-text">
                     For those without an ECOAS Passport, you'll need to apply for an entry Visa before getting to Nigeria. You'll have to submit an application online first <strong><a class="green-links" href="https://visa.immigration.gov.ng" target="_blank"> here</a> </strong> and then schedule an appointment to go to OIS WASHINGTON DC, 11900 Parklawn Drive Suite 160, Rockville MD 20852 to get fingerprinted.<br>
                     You'll need to create an account before starting your online application. Additional details on how to submit your application can be found <strong> <a class="green-links" href="https://nigeriaembassyusa.org/visas/#1626700566036-9816735a-349d" target="_blank"> here</a></strong>
-                    Here are the documents needed for your application. Please bring all documents with you to the OIS office
+                    Here are the documents needed for your application. Please bring all documents with you to the OIS office.
+                    <br>
+                    <br>
+                    Visa on arrival cost $270 and doesn’t require biometrics in the United States. (Duration 30days).
+                    <br>
+                    Tourist visa cost $160 for application and biometrics (Maryland, US) with appointment cost $80 without appointment $130. (Duration 2years). 
+                    <br>
+                    I’ll advise the visa on arrival as it saves funds and time.
                 </p> 
                     <ul>
                         <li>* Current passport (with at least 6 months validity).</li>
@@ -238,7 +245,7 @@
                                         
                                         
 
-                                        <form class="needs-validation" validate action="mail.php" method="post">
+                                        <form  id="rsvpForm" action="./mail.php" method="post">
                                             
                                             
                                             <div class="dual-form-field">
@@ -463,13 +470,12 @@
                                                     <option value="Zimbabwe">Zimbabwe</option>
                                                 </select>
                                                 
-                                                <input type="text" name="streetaddress" id="streetaddress" placeholder="Street Address" required>
+                                                <!-- <input type="text" name="streetaddress" id="streetaddress" placeholder="Street Address" required> -->
 
-                                                <br>
-                                                <br>
-                                                <input type="text" name="city" id="city" placeholder="City" required>
                                                 
-                                                <input type="text" name="postalcode" id="postalcode" placeholder="Postal Code" required>
+                                                <input type="text" name="city" id="city" placeholder="City / State" required>
+                                                
+                                                <!-- <input type="text" name="postalcode" id="postalcode" placeholder="Postal Code" required> -->
 
                                         </div>
 
@@ -502,7 +508,7 @@
                                             
 
                                             <div class="g-recaptcha" data-sitekey="6LfS7GslAAAAAP24Bp8qhLUnUNB1yA_c1_phvrdj"></div>
-                                            <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit' id="submit-btn">Submit</button>
+                                            <button type="submit" id="submit-btn">Submit</button>
                                             
                                         </form>
                                     </div>

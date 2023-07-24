@@ -752,7 +752,7 @@ input[type="radio"] {
 
     .flip-card-back {
         width: 650px;
-        padding: 70px;
+        padding: 70px 20px;
         height: max-content;
     }
     
@@ -768,7 +768,7 @@ input[type="radio"] {
 
     .flip-card-back {
         width: 400px;
-        padding: 70px;
+        padding: 70px 20px;
         height: max-content;
     }
     
@@ -785,7 +785,7 @@ input[type="radio"] {
     .flip-card-back {
         margin-left: 0;
         width: 360px;
-        padding: 70px;
+        padding: 70px 20px;
         height: max-content;
     }
     
@@ -830,7 +830,7 @@ input[type="radio"] {
 
     .flip-card-back {
         width: 600px;
-        padding: 70px;
+        padding: 70px 20px;
         height: max-content;
         flex-direction: column;
     }

@@ -70,3 +70,22 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// recaptcha validation
+document.getElementById("rsvpForm").addEventListener("submit",function(evt)
+  {
+  
+  var response = grecaptcha.getResponse();
+  if(response.length == 0) 
+  { 
+    //reCaptcha not verified
+    alert("please verify you are human!"); 
+    evt.preventDefault();
+    return false;
+  }
+  
+  //captcha verified
+  
+  
+});
